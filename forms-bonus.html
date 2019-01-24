@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pizza Order Form</title>
+</head>
+<body>
+<form method="POST" action="https://www.elformo.com/forms/2b3cd940-e405-4c5d-a468-084b2fbfb9e3">
+    <h2>Your Contact Info</h2>
+    <label for="email">Email</label>
+    <input id="email" name="email" type="text">
+    <label for="password">Password</label>
+    <input id="password" name="password" type="password">
+    <br>
+
+    <h2>What do you want on your pizza?</h2>
+    <label for="pepperoni">
+        <input id="pepperoni" name=toppings value="pepperoni" type="checkbox"> Pepperoni
+    </label>
+    <label for="anchovies">
+        <input id="anchovies" name=toppings value="anchovies" type="checkbox"> Anchovies
+    </label>
+    <label for="veggies">
+        <input id="veggies" name=toppings value="veggies" type="checkbox"> Veggies
+    </label>
+    <br>
+
+    <h2>How do you want to get your pizza?</h2>
+    <select name="delivery">
+        <option value="driver">Delivery</option>
+        <option value="carryout">Carry-out</option>
+    </select>
+    <br>
+    <br>
+
+    <button type="submit">Get dat pizza.</button>
+</form>
+</body>
+</html>
