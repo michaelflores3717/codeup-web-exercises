@@ -1,5 +1,0 @@
-Getting Git is legit
-
-This is another line
-
-test
