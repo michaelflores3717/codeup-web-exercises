@@ -6,6 +6,10 @@
 </head>
 <body>
 <form method="POST" action="https://www.elformo.com/forms/2b3cd940-e405-4c5d-a468-084b2fbfb9e3">
+    <h1>The Pizza Place</h1>
+    <a href="http://pizza.com/"><img src="img/pizza.jpg" height="10%" width="10%"></a>
+    <br>
+
     <h2>Your Contact Info</h2>
     <label for="email">Email</label>
     <input id="email" name="email" type="text">
@@ -34,6 +38,71 @@
     <br>
 
     <button type="submit">Get dat pizza.</button>
+</form>
+<br>
+<hr>
+
+<form method="POST" action="https://www.elformo.com/forms/2b3cd940-e405-4c5d-a468-084b2fbfb9e3">
+    <div>
+        <h2>Texas Association of Realtors</h2>
+        <h1><strong>RESIDENTIAL LEASE APPLICATION</strong></h1>
+        <h6>USE OF THIS FORM BY PERSONS WHO ARE NOT MEMBERS OF THE TEXAS ASSOCIATION OF REALTORS IS PROHIBITED</h6>
+        <h4><strong><em>Each occupant and co-occupant 18 years or older must submit a separate application</em></strong></h4>
+    </div>
+    <hr>
+    <div>
+        <label for="address">Property Address:</label>
+        <input id="address" name="address" type="text">
+        <br>
+        Anticipated:
+        <label for ="date">Move-in date</label>
+        <input id="date" name="date" type="text">
+        <label for ="rent">Monthly rent $</label>
+        <input id="rent" name="rent" type="text">
+        <label for ="deposit">Security deposit $</label>
+        <input id="deposit" name="deposit" type="text">
+    </div>
+    <div>
+        Applicant was referred to landlord by:
+        <br>
+        <label for="agent">
+            <input id="agent" type="radio" name="referred" value="true"> Real estate agent
+        </label>
+        <input id="agentname" type="text" name="agentname"><label for="agentname">(name)</label>
+        <input id="agentphone" type="text" name="agentphone"><label for="agentphone">(phone)</label>
+        <br>
+        <label for="newspaper">
+            <input id="newspaper" type="radio" name="referred" value="true"> Newspaper
+        </label>
+        <label for="sign">
+            <input id="sign" type="radio" name="referred" value="true"> Sign
+        </label>
+        <label for="internet">
+            <input id="internet" type="radio" name="referred" value="true"> Internet
+        </label>
+        <label for="other">
+            <input id="other" type="radio" name="referred" value="true"> Other
+        </label>
+        <input type="text" name="othertext">
+    </div>
+    <div>
+        <label for="applicantname">Applicant's name (first, middle, last)</label>
+        <input id="applicantname" name="applicantname" type="text">
+        <br>
+        Is there a co-applicant?
+        <label for="coapplicant">
+            Yes <input id="coapplicant" name="coapplicant" value="true" type="radio">
+            No <input id="coapplicantno" name="coapplicant" value="false" type="radio">
+        </label>
+        If yes, co-applicant must submit a separate application.
+        <br>
+        <label for="lastname">
+            Applicant's former last name (maiden or married): <input id="lastname" name="lastname" type="text">
+        </label>
+    </div>
+    <div>
+        <button type="submit">Submit</button>
+    </div>
 </form>
 </body>
 </html>
