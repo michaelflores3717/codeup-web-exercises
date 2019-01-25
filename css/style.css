@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css?family=Major+Mono+Display');
+
+h1 {
+    text-align: center;
+    color: purple;
+}
+
+h2 {
+    color: steelblue;
+    text-decoration: underline;
+}
+
+h2:hover {
+    color: whitesmoke;
+}
+
+body {
+    background-color: aliceblue;
+    background-image: url(img/robot.jpg);
+    background-position: center center;
+    font-family: 'Major Mono Display', monospace;
+}
+
+ul, ol {
+    list-style-type: square;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 5px;
+    margin: 5px;
+}
+
+a:link {
+    color: blue;
+}
+
+a:hover {
+    color: green;
+}
+
+a:active {
+    color: red;
+}
+
+a:visited {
+    color: purple;
+}
