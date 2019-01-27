@@ -16,7 +16,7 @@
  * Can you refactor your code to use functions?
  */
 
-/*var numberConfirm  = confirm("Would you like to enter a number?");
+var numberConfirm  = confirm("Would you like to enter a number?");
 var number;
 
 function promptCheck() {
