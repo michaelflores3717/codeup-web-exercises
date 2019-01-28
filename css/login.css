@@ -58,7 +58,7 @@ fieldset {
     /* HINT: Examples are available at: https://glitch.com/~input-button-width */
     padding: 4px 0px 4px 0px;
     margin: .5em 0em .5em 0em;
-    width: calc(100% - 8px);
+    width: calc(100% - 4px);
 
 }
 
@@ -71,7 +71,6 @@ fieldset {
     text-decoration-color: white;
     font-weight: bold;
     padding: 8px;
-
 }
 
 .btn-block {

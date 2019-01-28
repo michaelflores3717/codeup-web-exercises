@@ -36,7 +36,7 @@ for (var i = 100; i>=5; i = i - 5) {
 }
 
 
-var userNumber = prompt("Pick an odd number");
+var userNumber = prompt("Pick an odd number.");
 console.log("Number to skip is " + userNumber)
 for (var i = 1; i<50; i++) {
     if (i % 2 == 0) {
