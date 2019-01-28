@@ -108,7 +108,6 @@ a {
 .timeline {
     width: calc(50% - 1em);
     float: left;
-    clear: right;
     margin: 0em .5em 0em .5em;
 }
 
