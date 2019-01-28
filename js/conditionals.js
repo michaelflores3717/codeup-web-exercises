@@ -33,6 +33,7 @@ function promptCheck() {
 function numberCheck() {
     if (isNaN(number)) {
         alert("You did not enter a number!")
+        mainFunction();
         return false;
     } else if (number % 2 == 1 || number % 2 == -1) {
         alert("You entered an odd number.");
