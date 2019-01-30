@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 0 auto;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.row {
+    width: 100%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.half-column, .third-column, .fourth-column, .eighth-column {
+    float: left;
+    padding: 10px;
+    border: 3px solid black;
+    height: 5em;
+    background-color: #848487;
+    margin: 0.5em 0;
+}
+
+.half-column {
+    width: 50%;
+}
+
+.third-column {
+    width: 33.3%
+}
+
+.fourth-column {
+    width: 25%;
+}
+
+.eighth-column {
+    width: 12.5%;
+}
