@@ -227,9 +227,9 @@
 
     /* Declare some book objects */
 
-    function showBookInfo (bookOne, bookTwo) {
+    function showBookInfo (book1, book2) {
         var books = [];
-        books.push(bookOne, bookTwo);
+        books.push(book1, book2);
         return books;
     }
 
@@ -243,3 +243,4 @@
 
 
 })();
+

@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Rubik');
+
+
+body {
+    margin: 0;
+    background-color: #f5f7f8;
+    font-family: 'Rubik', sans-serif;
+}
+
+img#avatar {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+#profile-title {
+    text-align: center;
+    vertical-align: 2em;
+    padding-top: .3em;
+}
+
+nav {
+    background-color: #50616d;
+    height: 2.188em;
+}
+
+#nav-bar-list>li {
+    margin-bottom: 0.5em;
+    display: inline-block;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul#description-under-avatar {
+    list-style: none;
+    padding-top: 0.3em;
+
+}
+
+ul#description-under-avatar>li {
+    padding: 0.5em 0.5em 0.5em 2em;
+}
+
+ul#under-profile-list {
+    padding-top: 0.5em;
+    list-style: none;
+}
+
+ul#under-profile-list>li {
+    padding: 0.5em 0.5em 0.5em 2em;
+    color: #fff;
+}
+
+li#right-icon {
+    align-content: center;
+}
+
+.container-shadow {
+    -webkit-box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);
+}
+
+.container-left {
+    float: left;
+    height: 100%;
+    width: 30%
+}
+
+.container-center {
+    float: left;
+    height: 100%;
+    width: 50%;
+}
+
+.container-right {
+    float: right;
+    height: 100%;
+    width: 20%;
+}
+
+.icon {
+    height: 34px;
+    width: 98px;
+}
+
+.timeline-container {
+    height: 15em;
+    background-color: #fff;
+}
+
+#profile, .right-box {
+    height: 15em;
+    background-color: white;
+}
+
+#group-event-photos {
+    height: 8em;
+    background-color: #8196a4;
+}
+
+#interests {
+    height: 8em;
+    background-color: white;
+}
+
+
+#status-input {
+    height: 7em;
+    background-color: #fff;
+    top: 2em;
+}
+
+.margin {
+    width: calc(100% - 4em);
+    margin: 3em 2em 3em 2em;
+}
+
+#looking-at {
+    height: 8em;
+    background-color: #e0e5e8;
+}
+
+#logo {
+    height: 100%;
+    width: 100%;
+}
+
+#logo-side {
+    float:left;
+    height: 34px;
+    width: 98px;
+}
+
+#status-input-field {
+    width: 80%;
+}
+
+#input-field-container {
+    text-align: center;
+    line-height: 7em;
+}
+
+img.img-post-author {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    padding: 0.5em 0 0 0.5em;
+    margin-right: 0.5em;
+    float:left;
+}
+
+p.author-text {
+    padding-top: 2em;
+    left: 0.5em;
+}
