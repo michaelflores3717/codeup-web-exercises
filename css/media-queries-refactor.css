@@ -1,0 +1,151 @@
+.header-img>img {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+/* Mobile */
+
+@media screen and (max-width:992px) {
+
+    body {
+        text-align: center;
+    }
+
+    footer {
+        padding-top: 2em;
+    }
+
+    .nav-links {
+        display: block;
+        text-align: center;
+        list-style: none;
+        padding: 0;
+    }
+
+    .header-img > img {
+        width: 339px;
+        height: 224px;
+    }
+
+    .alert-info {
+        background-color: #cbffff;
+        margin: 0.5em;
+        padding: 1em;
+        border: solid 0.1em #cccccc;
+    }
+
+    .alert-info > a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .main, .sub-section, footer > p {
+        text-align: left;
+    }
+
+    .sub-section {
+        font-style: italic;
+    }
+
+    li {
+        background-color: #cccccc;
+        margin: 0.5em;
+        padding: 1em;
+    }
+
+    #social-media-list {
+        float: right;
+        list-style: none;
+    }
+
+    #social-media-list>li {
+        display: inline;
+        background-color: transparent;
+        padding: 0 0.1em 0 0.1em;
+    }
+
+    footer>p {
+        float: left;
+    }
+
+    footer {
+        padding-top: 5em;
+        clear: both;
+    }
+
+    #social-media-list img {
+        height: 40px;
+        width: 40px;
+    }
+}
+
+/* Desktop Size */
+
+@media screen and (min-width:992px) {
+
+    body {
+        padding: 0 1em;
+    }
+
+    nav {
+        float: right;
+    }
+
+    h1 {
+        float: left;
+    }
+
+    li {
+        display: inline-block;
+        padding: 1em 0 1em 1em;
+    }
+
+    .hidden-on-desktop{
+        display: none;
+    }
+
+    .main, .sub-section {
+        padding-top: 2em;
+    }
+
+    .main{
+    }
+
+    .sub-section {
+        font-style: italic;
+    }
+
+    .main h2, .sub-section h2 {
+        margin: 0;
+    }
+
+    .main p, .sub-section p {
+        padding: 1em 0 0 1em;
+    }
+
+    #social-media-list {
+        float: right;
+        list-style: none;
+    }
+
+    #social-media-list>li {
+        padding: 0 0.5em 0 0.5em;
+    }
+
+    #social-media-list img {
+        height: 50px;
+        width: 50px;
+    }
+
+    footer>p {
+        float: left;
+    }
+
+    footer {
+        padding-top: 5em;
+        clear: both;
+    }
+
+
+}
