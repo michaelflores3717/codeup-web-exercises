@@ -1,0 +1,30 @@
+h1 {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.jumbotron {
+    background-image: url("img/pizza.png");
+    margin-top: 2em;
+}
+
+.container, .container-fluid {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+}
+
+.card {
+    margin-bottom: 2em;
+}
+
+.card-footer {
+    text-align: right;
+}
+
+.align-right {
+    padding-left: 2em;
+}
