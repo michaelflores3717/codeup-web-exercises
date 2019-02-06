@@ -24,17 +24,17 @@ alert("Your total weekly pay is " + ((googlePayQuestion * googleHourQuestion) + 
 
 var isFullQuestion = prompt("Is the class full? Answer true or false.");
 var doesConflictQuestion = prompt("Do you have a schedule conflict? Answer true or false");
-var isFull = isFullQuestion === "true";
-var doesConflict = doesConflictQuestion === "true";
+var isFull = isFullQuestion.toLowerCase() === "true";
+var doesConflict = doesConflictQuestion.toLowerCase() === "true";
 var isEnrolled = !isFull && !doesConflict;
 alert("You are enrolled: " + isEnrolled);
 
 var itemNumberString = prompt("How many items did you buy?");
 var itemNumber = parseInt(itemNumberString);
 var premiumMemberQuestion = prompt("Are you a premium member? Answer true or false");
-var isPremiumMember = premiumMemberQuestion === "true";
+var isPremiumMember = premiumMemberQuestion.toLowerCase() === "true";
 var offerIsExpiredQuestion = prompt("Is the offer expired? Answer true or false");
-var offerIsExpired = offerIsExpiredQuestion === "true";
+var offerIsExpired = offerIsExpiredQuestion.toLowerCase() === "true";
 
 var offerIsApplied = (itemNumber > 2 || isPremiumMember) && !offerIsExpired;
 alert("Is the offer applied? " + offerIsApplied);
