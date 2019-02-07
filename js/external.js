@@ -1,5 +1,5 @@
 "use strict"
-git
+
 console.log("Hello from external JavaScript!");
 
 alert("Welcome to my Website!");
@@ -7,10 +7,12 @@ alert("Welcome to my Website!");
 var userInput = prompt("What is your favorite color");
 alert(userInput + " is my favorite color too!");
 
+var totalRentalCost = prompt("How much was each movie to rent per day?")
 var firstQuestion =  prompt("How many days did you rent the Little Mermaid for?");
 var secondQuestion =  prompt("How many days you rent the Brother Bear for?");
 var thirdQuestion =  prompt("How many days you rent the Hercules for?");
-alert("Your total rental cost is " + "$" + ((firstQuestion * 3) + (secondQuestion * 3) + (thirdQuestion *3)));
+alert("Your total rental cost is " + "$" + ((firstQuestion * totalRentalCost) + (secondQuestion * totalRentalCost) +
+    (thirdQuestion * totalRentalCost)));
 
 var googlePayQuestion = prompt("How much did Google pay you?");
 var googleHourQuestion = prompt("How many hours did you work for Google?");
