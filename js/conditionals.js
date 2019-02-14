@@ -1,3 +1,4 @@
+(function(){
 "use strict";
 
 /**
@@ -16,6 +17,7 @@
  * Can you refactor your code to use functions?
  */
 
+
 var numberConfirm = confirm("Would you like to enter a number?");
 var number;
 
@@ -32,10 +34,9 @@ function promptCheck() {
 
 function numberCheck() {
     if (isNaN(number)) {
-        alert("You did not enter a number!")
+        alert("You did not enter a number!");
         mainFunction();
-        return false;
-    } else if (number % 2 == 1 || number % 2 == -1) {
+    } else if (number % 2 === 1 || number % 2 === -1) {
         alert("You entered an odd number.");
         return true;
     } else {
@@ -94,11 +95,11 @@ mainFunction();
          */
 
 function analyzeColor(colorName) {
-    if (colorName == "blue") {
+    if (colorName === "blue") {
         return colorName + " is the color of the ocean";
-    } else if (colorName == "red") {
+    } else if (colorName === "red") {
         return colorName + " is the color of roses";
-    } else if (colorName == "cyan") {
+    } else if (colorName === "cyan") {
         return colorName + " is a weird color";
     } else {
         return "This is not a color I know";
@@ -182,7 +183,7 @@ function calculateTotal (luckyNumber, totalAmount) {
     switch(luckyNumber) {
         case 0:
             var chargedAmount = totalAmount;
-            return chargedAmount
+            return chargedAmount;
             break;
         case 1:
             chargedAmount =  totalAmount - (totalAmount * 0.1);
@@ -227,3 +228,5 @@ alert("Your lucky number was " + luckyNumber);
 alert("You said your bill total was " + totalBill);
 var newBillTotal = calculateTotal(luckyNumber, totalBill);
 alert("Your discounted price is now " + newBillTotal);
+
+})();
