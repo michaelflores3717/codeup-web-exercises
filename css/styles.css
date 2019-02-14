@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css?family=Abel');
+@import url('https://fonts.googleapis.com/css?family=Anton');
+
+nav {
+    width: 100%;
+}
+
+body {
+    font-family: 'Abel', sans-serif;
+    background-color: #E6E6E6;
+    padding: 3em;
+}
+#navbar-row {
+    background-color: white;
+    position: relative;
+    padding: 1.5em;
+    margin: 2em 0;
+}
+
+ul {
+
+}
+
+li {
+    list-style: none;
+}
+.icon3 {
+    height: 105px;
+    width: 105px;
+
+}
+
+#navbar-row li {
+    display: inline;
+    padding: 1em 1em;
+
+}
+
+.navbar2 {
+    margin-bottom: 5em;
+    text-align: center;
+}
+
+.navbar2 li {
+    display: inline;
+    list-style: none;
+    padding: 2em;
+}
+
+.navbar2 li img{
+    float: none;
+}
+
+.nav2 {
+    background-color: white;
+    margin-top: 2em;
+    padding: 1em;
+}
+
+.logo2 {
+    width: 105px;
+    height: 105px;
+    border-radius: 50px;
+    position: absolute;
+    left: 46%;
+    top: 9%;
+}
+
+h4 {
+    display: inline;
+    margin-left: 5em;
+}
+h5 {
+    margin-bottom: 5em;
+}
+
+li img {
+    float: left;
+    margin-right: 1em;
+
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+#header-info {
+    text-align: center;
+}
+
+.logo {
+    width: 105px;
+    height: 105px;
+    border-radius: 40px;
+    position: absolute;
+    bottom: -2.5em;
+
+}
+
+.button-top {
+    padding: 0;
+}
+
+.logo2 {
+    width: 105px;
+    height: 105px
+}
+
+.icon-list {
+    padding: 10px;
+}
+
+.btn-circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 60px;
+    border: solid white 5px;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    margin: .5em;
+}
+
+.btn-sm {
+    width: 15px;
+    height: 15px;
+    border: none;
+    font-size: 6px;
+    float: right;
+}
+
+.fp{
+    display: inline-block;
+}
+
+.sidebar {
+    width: 20%;
+    margin-bottom: 2em;
+}
+
+.red {
+    background-color: #E6563B;
+}
+
+.yellow {
+    background-color: #EB9D3A;
+}
+
+.green {
+    background-color: #7CB06C;
+}
+
+.blue {
+    background-color: #00ABA9;
+}
+#twitter {
+    height: 25px;
+    width: auto;
+    float: left;
+    margin-right: 1em;
+}
+.sw-row {
+    margin-bottom: 2em;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    #navbar-row {
+        background-color: transparent;
+        position: relative;
+        padding: 0;
+        margin: 0;
+    }
+}
