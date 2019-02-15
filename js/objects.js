@@ -32,7 +32,7 @@
         return "Hi I am " + person.firstName + " " + person.lastName;
     }
 
-    console.log(person.sayHello())
+    console.log(person.sayHello());
 
     /** TODO:
      * HEB has an offer for the shoppers that buy products amounting to
@@ -112,6 +112,8 @@
             }
         }
     ];
+
+    console.log(books[0].author.firstName);
 
     /**
      * TODO:
@@ -204,7 +206,6 @@
 
     console.log(booksArrayTest("The Jungle Book", "Rudyard", "Kipling",
         "20,000 Leagues Under the Sea", "Jules", "Verne"));
-
 
 
     var book1 = {
