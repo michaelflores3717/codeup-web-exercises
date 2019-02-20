@@ -7,7 +7,7 @@
 
         getArea: function () {
             // TODO: complete this method
-            var area = Math.PI * Math.pow(circle.radius, 2);
+            var area = Math.PI * Math.pow(this.radius, 2);
             // hint: area = pi * radius^2
 
             return area; // TODO: return the proper value
@@ -16,10 +16,9 @@
         logInfo: function (doRounding) {
             // TODO: complete this method.
                 if (doRounding === true) {
-                    return Math.round(circle.getArea());
+                    return Math.round(this.getArea());
                 } else if (doRounding === false) {
-                    console.log("Area of a circle with radius: " + this.radius + ", is: " + circle.getArea());
-                    return;
+                    console.log("Area of a circle with radius: " + this.radius + ", is: " + this.getArea());
                 }
         }
     };
