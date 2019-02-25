@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div style="text-align:center">
+<h1>Random Cat Generator</h1>
+
+<div>
+    <img id = "potential-cat" src="https://via.placeholder.com/300x300">
+</div>
+<br>
+
+<button id = "btn1">Click me!</button>
+</div>
+
+<script>
+
+    "use strict";
+
+    var potentialCat = document.getElementById('potential-cat');
+
+    var catArray = ["https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80",
+    "https://images.mentalfloss.com/sites/default/files/styles/mf_image_16x9/public/549585-istock-909106260.jpg?itok=ds7LqH1N&resize=1100x1100",
+    "http://www.catster.com/wp-content/uploads/2017/08/A-fluffy-cat-looking-funny-surprised-or-concerned.jpg",
+    "https://www.catster.com/wp-content/uploads/2017/08/A-brown-cat-licking-its-lips.jpg", "http://healthypets.royalcanin.com.au/assets/Uploads/_resampled/ResizedImageWzgwMCw1MjZd/Cat-Food-Tips.jpg",
+    "https://boygeniusreport.files.wordpress.com/2016/05/scared-surprised-cat-face.jpg?quality=98&strip=all&w=782", "https://www.top13.net/wp-content/uploads/2015/10/perfectly-timed-cat-photos-funny-cover.jpg",
+    "https://tailandfur.com/wp-content/uploads/2016/03/40-Scary-and-Funny-Cat-Pictures-Feature-Image.jpg"];
+
+    var catBody = function (event) {
+    var i = (Math.floor(Math.random() * 8) + 1) - 1;
+    potentialCat.src= catArray[i];
+    };
+
+    potentialCat.addEventListener('click', catBody, false);
+
+    var btn1 = document.getElementById('btn1');
+    btn1.addEventListener('click', catBody, false);
+
+</script>
+</body>
+</html>
