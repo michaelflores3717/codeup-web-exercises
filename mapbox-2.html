@@ -14,22 +14,19 @@
 <body>
 
 <div id='map'></div>
-<sript src="js/keys.js"></sript>
+<script src="js/keys.js"></script>
 <script>
     mapboxgl.accessToken = mapboxToken;
     const map = new mapboxgl.Map({
         container: 'map',
-        style: 'mapbox://styles/michaelflores3717/cjskmmqj71st51frw62qpfo7r',
-        center: [-98.32529, 26.21591],
-        zoom: 9.0
+        style: 'mapbox://styles/mapbox/streets-v9',
+        center: [-77.0502, 38.8893],
+        zoom: 13
     });
 
-    var interval = 5000;
-
-    var intervalId = setInterval(function () {
-        map.setStyle('mapbox://styles/mapbox/satellite-v9');
-        map.setZoom('2');
-    }, interval);
+    var marker = new mapboxgl.Marker();
+    marker.setLngLat([-77.0502, 38.8893]);
+    marker.addTo(map);
 
 </script>
 </body>
