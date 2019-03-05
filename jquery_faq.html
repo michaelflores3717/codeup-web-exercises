@@ -2,9 +2,97 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Park Descriptions</title>
+    <style>
+        .invisible {
+            visibility: hidden;
+        }
+    </style>
 </head>
 <body>
 
+<div id="newsletter">
+    <span id="no">x</span>
+    <h1>Would you like to sign for our newsletter?</h1>
+</div>
+
+<h2>Would you like to register for the site?</h2>
+
+<dl>
+    <dt>Xanadu</dt>
+    <dd class="invisible clicker">Xanadu description</dd>
+    <dt>Yosemite</dt>
+    <dd class="invisible clicker">Yosemite description</dd>
+    <dt>Zion</dt>
+    <dd class="invisible clicker">Zion description</dd>
+
+    <a id="clickable" href="#">Click me</a>
+</dl>
+
+<h3 id="national-parks-heading">National Park</h3>
+<ul id="national-parks">
+    <li>Fact 1</li>
+    <li>Fact 2</li>
+    <li>Fact 3</li>
+    <li>Fact 4</li>
+</ul>
+<h3>State Parks of Texas</h3>
+<ul id="state-parks-texas">
+    <li>Fact 1</li>
+    <li>Fact 2</li>
+    <li>Fact 3</li>
+    <li>Fact 4</li>
+</ul>
+<h3>Zion</h3>
+<ul id="zion">
+    <li>Fact 1</li>
+    <li>Fact 2</li>
+    <li>Fact 3</li>
+    <li>Fact 4</li>
+</ul>
+
+<button id="button">Click me!</button>
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous">
+</script>
+<script>
+    "use strict";
+
+    $(document).ready(function() {
+        $('#clickable').click(function(event) {
+            event.preventDefault();
+            $('.clicker').toggleClass('invisible');
+        });
+
+        $('#button').click(function(event) {
+            $('ul').each(function(index, element) {
+                console.log($(element));
+                $(element).children().last().css('background-color', 'yellow');
+            });
+        });
+
+        $('h3').click(function(event) {
+            $(this).next().children().css('font-weight', 'bold');
+        });
+
+        $('li').click(function(event) {
+            $(this).parent().children().first().css('color', 'blue');
+        });
+
+        $('#no').click(function(event) {
+            $('#newsletter').hide();
+        });
+
+        $('h3').next().hide();
+
+        $('h3').click(function(event) {
+            $(this).next().slideToggle();
+        });
+
+        $('h2').hide();
+
+        $('h2').delay(8000).fadeIn(1000);
+    });
+</script>
 </body>
 </html>
